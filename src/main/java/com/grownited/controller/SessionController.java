@@ -1,8 +1,10 @@
 package com.grownited.controller;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Controller; 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @Controller
 public class SessionController {
@@ -26,5 +28,17 @@ public class SessionController {
 	public String forgetPassword() {
 		return "ForgetPassword";
 	}
+	
+	@PostMapping("sendOtp")
+	public String sendOtp() {
+		return "ChangePassword";
+	}
+	 
+	@PostMapping("updatepassword")
+	public String updatePassword() {
+		return "Login";
+	}
+	
+	
 }
 

@@ -9,10 +9,10 @@
 <body>
 <h1>Forgot Password</h1>
 
-<form action="saveuser" method="post">
+<form action="sendOtp" method="post">
 
-Email: <input type="text" name="email"/><br><br>
-<input type="submit" value="Send"/>
+           Email: <input type="text" name="email"/><br><br>
+           <input type="submit" value="help"/>
 </form>
 <br><br>
 <a href="login">Return to Login</a>
