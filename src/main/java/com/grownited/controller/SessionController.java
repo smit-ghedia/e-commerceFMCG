@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.grownited.entity.UserEntity;
+
 
 @Controller
 public class SessionController {
@@ -20,9 +22,13 @@ public class SessionController {
 	}
 	
 	@PostMapping("saveuser")
-	public String saveUser() {
+	public String saveUser(UserEntity userEntity) {
+		 System.out.println(userEntity.getFirstName());
+		 System.out.println(userEntity.getEmail());
+		 System.out.println(userEntity.getLastName());
 		return "Login";
 	}
+	
 	
 	@GetMapping("forgetpassword")
 	public String forgetPassword() {
