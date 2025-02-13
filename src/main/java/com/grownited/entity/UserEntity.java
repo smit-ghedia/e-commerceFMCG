@@ -19,6 +19,7 @@ public class UserEntity {
       private String password;
       private String contact;
       private String role;//admin,vendor,customer 
+      private String gender;
 	public Integer getUserId() {
 		return userId;
 	}
@@ -60,6 +61,12 @@ public class UserEntity {
 	}
 	public void setRole(String role) {
 		this.role = role;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 	
 	
