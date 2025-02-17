@@ -20,7 +20,7 @@ public class StateController {
 	}
 	
 	@PostMapping("savestate")
- String saveState(StateEntity stateEntity) {
+    public String saveState(StateEntity stateEntity) {
         System.out.println(stateEntity.getStateName());
         repoState.save(stateEntity);
 		return "NewState";

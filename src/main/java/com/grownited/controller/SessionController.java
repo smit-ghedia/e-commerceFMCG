@@ -1,13 +1,19 @@
 package com.grownited.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller; 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 import com.grownited.entity.UserEntity;
 import com.grownited.repository.UserRepository;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
@@ -28,9 +34,10 @@ public class SessionController {
 	
 	@PostMapping("saveuser")
 	public String saveUser(UserEntity userEntity) {
-		 System.out.println(userEntity.getFirstName());
-		 System.out.println(userEntity.getEmail());
-		 System.out.println(userEntity.getLastName());
+		userEntity.setRole("USER");
+		userEntity.setCreatedAt(LocalDateTime.now());
+		userEntity.setActive(true);
+		
 		 repoUser.save(userEntity);
 		return "Login";
 	}        
@@ -51,6 +58,15 @@ public class SessionController {
 	public String updatePassword() {
 		return "Login";
 	}
+	
+	@GetMapping("listuser")
+	public String listUser(Model model) {
+    List<UserEntity> userList = repoUser.findAll();
+    model.addAttribute("userList", userList);
+    
+ 		return "ListUser";
+	}
+	
 	
 	
 }
