@@ -27,7 +27,7 @@ public class CityController {
         System.out.println(cityEntity.getCityName());
 
     	repoCity.save(cityEntity);
-    	return "NewCity";
+    	return "redirect:/listcity";
     	
     	
     }

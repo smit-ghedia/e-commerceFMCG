@@ -5,20 +5,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import com.grownited.entity.UserEntity;
 import com.grownited.repository.UserRepository;
-import org.springframework.web.bind.annotation.RequestParam;
+import com.grownited.service.MailService;
 
 
 
 @Controller
 public class SessionController {
 
+	@Autowired
+	MailService serviceMail;
 	@Autowired
 	UserRepository repoUser;
 	
@@ -39,6 +40,9 @@ public class SessionController {
 		userEntity.setActive(true);
 		
 		 repoUser.save(userEntity);
+		 
+		 //send mail
+		 serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
 		return "Login";
 	}        
 
