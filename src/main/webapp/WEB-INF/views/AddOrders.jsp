@@ -19,7 +19,8 @@
                         <input type="number" class="form-control" id="userId" name="userId" placeholder="Enter User ID" required>
                     </td>
                 </tr>
-                <tr>
+
+<tr>
                     <th>Status</th>
                     <td>
                         <input type="text" class="form-control" id="status" name="status" placeholder="Enter Status" required>

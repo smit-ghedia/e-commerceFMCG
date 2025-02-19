@@ -1,6 +1,8 @@
 package com.grownited.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,8 @@ public class SessionController {
 	MailService serviceMail;
 	@Autowired
 	UserRepository repoUser;
+	@Autowired
+	PasswordEncoder encoder;
 	
 	@GetMapping(value = {"/" , "signup"})
 	public String signup() {
@@ -38,6 +42,10 @@ public class SessionController {
 		userEntity.setRole("USER");
 		userEntity.setCreatedAt(LocalDateTime.now());
 		userEntity.setActive(true);
+		
+		String encPassword = encoder.encode(userEntity.getPassword());
+		userEntity.setPassword(encPassword);
+		
 		
 		 repoUser.save(userEntity);
 		 
