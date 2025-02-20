@@ -72,6 +72,23 @@ public class SessionController {
 		return "Login";
 	}
 	
+	@PostMapping("authenticate")
+	public String authenticate(String email, String password,Model model) {
+		
+		Optional<UserEntity> op = repoUser.findByEmail(email);
+		if (op.isPresent()) {
+			
+			UserEntity dbUser = op.get();
+			if (encoder.matches(password, dbUser.getPassword())) {
+				return "Home";
+				
+			}
+			
+		}
+		model.addAttribute("error", "Invalid Credentials");
+		return"Login";
+	}
+	
 	@GetMapping("listuser")
 	public String listUser(Model model) {
     List<UserEntity> userList = repoUser.findAll();
