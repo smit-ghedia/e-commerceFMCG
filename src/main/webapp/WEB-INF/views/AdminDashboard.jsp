@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>home</title>
+<title>Admin Dashboard</title>
 </head>
 <body>
-<h1>HOME</h1>
-
+<h1>Admin Dashboard</h1>
 <h1>Welcome, ${user.firstName }</h1>
+<a href="logout">Logout</a>
 </body>
 </html>

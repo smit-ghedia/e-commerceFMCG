@@ -89,7 +89,7 @@
             </div>
             <!--end::Row-->
           </form>
-          ${error}
+          
           
           <!-- /.social-auth-links -->
           <div class="text-center mt-3">

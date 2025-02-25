@@ -103,6 +103,11 @@
               </div>
             </div>
           </form>
+          <div class="text-center mt-2">
+    <a href="login" class="text-decoration-none text-success fw-bold">
+        <i class="bi bi-person-plus"></i> Already a member
+    </a>
+</div>
               </div>
       </div>
     </div>

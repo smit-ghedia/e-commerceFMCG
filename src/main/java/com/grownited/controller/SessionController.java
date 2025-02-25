@@ -16,6 +16,8 @@ import com.grownited.entity.UserEntity;
 import com.grownited.repository.UserRepository;
 import com.grownited.service.MailService;
 
+import jakarta.servlet.http.HttpSession;
+
 
 
 @Controller
@@ -73,14 +75,22 @@ public class SessionController {
 	}
 	
 	@PostMapping("authenticate")
-	public String authenticate(String email, String password,Model model) {
+	public String authenticate(String email, String password,Model model,HttpSession session) {
 		
 		Optional<UserEntity> op = repoUser.findByEmail(email);
 		if (op.isPresent()) {
 			
 			UserEntity dbUser = op.get();
-			if (encoder.matches(password, dbUser.getPassword())) {
-				return "Home";
+			
+			boolean ans = encoder.matches(password, dbUser.getPassword());
+			if (ans==true) {
+				session.setAttribute("user", dbUser);
+				if (dbUser.getRole().equals("ADMIN")) {
+					return "AdminDashboard";
+				}else if(dbUser.getRole().equals("USER")) {
+					return "Home";
+
+				}
 				
 			}
 			
@@ -115,6 +125,12 @@ public class SessionController {
 	public String deleteUser(Integer userId) {
 		repoUser.deleteById(userId);
 		return"redirect:/listuser";
+	}
+	
+	@GetMapping("logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "Login";
 	}
 	
 	
