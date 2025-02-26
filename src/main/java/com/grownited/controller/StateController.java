@@ -13,11 +13,11 @@ import com.grownited.repository.StateRepository;
 
 @Controller
 public class StateController {
-	
 	@Autowired
 	StateRepository repoState;
 	
-	@GetMapping("newstate")
+	@GetMapping
+	("newstate")
 	public String newState() {
 		return "NewState";
 	}
@@ -37,3 +37,5 @@ public class StateController {
 	}
 
 }
+
+

@@ -10,5 +10,7 @@
 <h1>Admin Dashboard</h1>
 <h1>Welcome, ${user.firstName }</h1>
 <a href="logout">Logout</a>
+<br>
+<a href="newstate">Add State</a>
 </body>
 </html>
