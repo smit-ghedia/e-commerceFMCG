@@ -26,7 +26,7 @@ public class StateController {
     public String saveState(StateEntity stateEntity) {
         System.out.println(stateEntity.getStateName());
         repoState.save(stateEntity);
-		return "redirect:/liststate";
+		return "NewState";
 	}
 	
 	@GetMapping("liststate")
