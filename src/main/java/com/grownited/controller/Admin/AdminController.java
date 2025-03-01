@@ -11,4 +11,9 @@ public class AdminController {
 		return"AdminDashboard";
 	}
 	
+	@GetMapping("adminmaster")
+	public String adminMaster() {
+		return"AdminMaster";
+	}
+	
 }
