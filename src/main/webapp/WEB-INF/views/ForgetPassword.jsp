@@ -49,7 +49,6 @@
                       <button class="btn btn-primary w-100" type="submit">Send OTP</button>
                     </div>
                   </form>
-
                   <div class="text-center mt-3">
                     <a href="login">Return to Login</a>
                   </div>

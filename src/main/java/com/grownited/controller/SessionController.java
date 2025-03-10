@@ -65,12 +65,42 @@ public class SessionController {
 	}
 	
 	@PostMapping("sendOtp")
-	public String sendOtp() {
-		return "ChangePassword";
+	public String sendOtp(String email, Model model) {
+		//email valid
+	Optional<UserEntity> op = repoUser.findByEmail(email);
+		if (op.isEmpty()) {
+			model.addAttribute("error", "Enter valid email");
+			return"ForgetPassword";
+		}else {
+			String otp = "";
+			otp = (int)(Math.random() * 1000000) + "";
+			UserEntity user = op.get();
+			user.setOtp(otp);
+			repoUser.save(user);
+			serviceMail.sendOtpForForgetPassword(email, user.getFirstName(), otp);
+			return "ChangePassword";
+
+		}
 	}
-	 
+	
 	@PostMapping("updatepassword")
-	public String updatePassword() {
+	public String updatePassword(String email,String newpassword, String otp) {
+	Optional<UserEntity> op = 	repoUser.findByEmail(email);
+	if (op.isEmpty()) {
+		return "ChnagePassword";
+		
+	}else {
+		UserEntity user = op.get();
+		if (user.getOtp().equals(otp)) {
+			String enPwd = encoder.encode(newpassword);
+			user.setPassword(enPwd);
+			user.setOtp("");
+			repoUser.save(user);
+			
+		}else {
+			return"ChnagePassword";
+		}
+		}
 		return "Login";
 	}
 	

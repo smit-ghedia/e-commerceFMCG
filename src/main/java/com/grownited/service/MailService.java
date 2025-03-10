@@ -10,9 +10,27 @@ public class MailService {
 	
 	@Autowired
 	JavaMailSender mailSender;
+	
 	public void sendWelcomeMail(String email,String firstName) {
 		String subject = "Welcome to e-commercefmcg";
 		String body = "Hey" + firstName + "We're excited to have you on board as our premium customer";
+		String from = "smitghedia33@gmail.com";
+		
+		//logic
+		SimpleMailMessage message = new SimpleMailMessage() ;
+		message.setFrom(from);
+		message.setTo(email);
+		message.setSubject(subject);
+		message.setText(body);
+		
+		mailSender.send(message);
+		
+	}
+	
+	
+	public void sendOtpForForgetPassword(String email,String firstName,String otp) {
+		String subject = "OTP for reset passworf";
+		String body = "Hey" + firstName  +  "Here is your OTP for generating new password Otp:"+otp;
 		String from = "smitghedia33@gmail.com";
 		
 		//logic

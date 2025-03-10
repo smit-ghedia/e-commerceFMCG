@@ -27,6 +27,7 @@ public class UserEntity {
     private LocalDateTime createdAt;
     private Boolean active;
     private String gender;
+    private String otp; 
 
     // Automatically set createdAt before persisting the entity
     @PrePersist
@@ -114,4 +115,13 @@ public class UserEntity {
     public void setActive(Boolean active) {
         this.active = active;
     }
+
+	public String getOtp() {
+		return otp;
+	}
+
+	public void setOtp(String otp) {
+		this.otp = otp;
+	}
+    
 }

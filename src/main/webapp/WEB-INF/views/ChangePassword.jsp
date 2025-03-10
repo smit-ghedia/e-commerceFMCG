@@ -55,11 +55,7 @@
                       <input type="password" name="newpassword" class="form-control" id="newpassword" required>
                       <div class="invalid-feedback">Please enter your new password.</div>
                     </div>
-                    <div class="col-12">
-                      <label for="confirmpassword" class="form-label">Confirm Password</label>
-                      <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" required>
-                      <div class="invalid-feedback">Passwords must match.</div>
-                    </div>
+                    
                     <div class="col-12">
                       <button class="btn btn-primary w-100" type="submit">Change Password</button>
                     </div>
