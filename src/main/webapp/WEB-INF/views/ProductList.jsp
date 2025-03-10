@@ -32,7 +32,7 @@
                         <td>${product.productId}</td>
                         <td>${product.productName}</td>
                         <td>${product.description}</td>
-                        <td>${product.category}</td>
+                        <td>${product.categoryId}</td>
                         <td>${product.price}</td>
                         <td>${product.offerPrice}</td>
                         <td>${product.offerPercentage}%</td>

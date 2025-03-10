@@ -14,7 +14,7 @@
             </a>
             <ul id="users-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="components-alerts.html">
+                    <a href="addusers">
                         <i class="bi bi-circle"></i><span>Add New User</span>
                     </a>
                 </li>
@@ -61,7 +61,24 @@
         </li>
     </ul>
 </li><!-- End SubCategories Nav -->
-        
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#products-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-box"></i><span>Products</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="products-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="addproduct">
+                        <i class="bi bi-circle"></i><span>Add New Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="listproduct">
+                        <i class="bi bi-circle"></i><span>List Products</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Products Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">

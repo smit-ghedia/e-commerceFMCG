@@ -16,4 +16,8 @@ public class AdminController {
 		return"AdminMaster";
 	}
 	
+	@GetMapping("addusers")
+	public String addUsers() {
+		return "AddUsers";
+	}
 }

@@ -87,10 +87,11 @@ public class SessionController {
 				session.setAttribute("user", dbUser);
 				if (dbUser.getRole().equals("ADMIN")) {
 					return "AdminDashboard";
-				}else if(dbUser.getRole().equals("USER")) {
-					return "Home";
+				}else if(dbUser.getRole().equals("VENDOR")) {
+					return "VendorDashboard";
 
-				}
+				}else 
+					return"Home";
 				
 			}
 			
