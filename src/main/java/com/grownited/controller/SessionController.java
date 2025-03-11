@@ -116,12 +116,12 @@ public class SessionController {
 			if (ans==true) {
 				session.setAttribute("user", dbUser);
 				if (dbUser.getRole().equals("ADMIN")) {
-					return "AdminDashboard";
+					return "redirect:/admindashboard";
 				}else if(dbUser.getRole().equals("VENDOR")) {
-					return "VendorDashboard";
+					return "redirect:/vendordashboard";
 
 				}else 
-					return"Home";
+					return"redirect:/home";
 				
 			}
 			

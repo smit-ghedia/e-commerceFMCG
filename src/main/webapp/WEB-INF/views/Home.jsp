@@ -8,50 +8,101 @@
 <title>home</title>
 </head>
 <body>
+<jsp:include page="HomeCss.jsp"></jsp:include>
+
+<jsp:include page="HomeHeader.jsp"></jsp:include>
+<jsp:include page="HomeNavbar.jsp"></jsp:include>
  <jsp:include page="HomeJs.jsp"></jsp:include>
- <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+ <section class="py-3" style="background-image: url('images/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Yummy</h1>
-        <span>.</span>
-      </a>
+            <div class="banner-blocks">
+            
+              <div class="banner-ad large bg-info block-1">
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#chefs">Chefs</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+                <div class="swiper main-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                  <div class="swiper-wrapper" id="swiper-wrapper-a371f10474950c6101" aria-live="polite">
+                    
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 831px;">
+                      <div class="row banner-content p-5">
+                        <div class="content-wrapper col-md-7">
+                          <div class="categories my-3">100% natural</div>
+                          <h3 class="display-4">Fresh Smoothie &amp; Summer Juice</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+                        </div>
+                        <div class="img-wrapper col-md-5">
+                          <img src="images/product-thumb-1.png" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 831px;">
+                      <div class="row banner-content p-5">
+                        <div class="content-wrapper col-md-7">
+                          <div class="categories mb-3 pb-3">100% natural</div>
+                          <h3 class="banner-title">Fresh Smoothie &amp; Summer Juice</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                        </div>
+                        <div class="img-wrapper col-md-5">
+                          <img src="images/product-thumb-1.png" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 831px;">
+                      <div class="row banner-content p-5">
+                        <div class="content-wrapper col-md-7">
+                          <div class="categories mb-3 pb-3">100% natural</div>
+                          <h3 class="banner-title">Heinz Tomato Ketchup</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                        </div>
+                        <div class="img-wrapper col-md-5">
+                          <img src="images/product-thumb-2.png" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
 
-      <a class="btn-getstarted" href="index.html#book-a-table">Book a Table</a>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              </div>
+              
+              <div class="banner-ad bg-success-subtle block-2" style="background:url('images/ad-image-1.png') no-repeat;background-position: right bottom">
+                <div class="row banner-content p-5">
 
-    </div>
-  </header>
+                  <div class="content-wrapper col-md-7">
+                    <div class="categories sale mb-3 pb-3">20% off</div>
+                    <h3 class="banner-title">Fruits &amp; Vegetables</h3>
+                    <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="banner-ad bg-danger block-3" style="background:url('images/ad-image-2.png') no-repeat;background-position: right bottom">
+                <div class="row banner-content p-5">
+
+                  <div class="content-wrapper col-md-7">
+                    <div class="categories sale mb-3 pb-3">15% off</div>
+                    <h3 class="item-title">Baked Products</h3>
+                    <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- / Banner Blocks -->
+              
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
