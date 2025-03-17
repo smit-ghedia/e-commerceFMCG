@@ -25,4 +25,18 @@ public class HomeController {
 	return"Home";
 	}
 	
+	@GetMapping("homecart")
+	public  String homeCart() {
+		return"HomeCart";
+	}
+	
+	@GetMapping("homecontact")
+	public String homeContact() {
+		return"HomeContact";
+	}
+	
+	@GetMapping("homecheckout")
+	public String homeCheckout() {
+		return"HomeCheckout";
+	}
 }

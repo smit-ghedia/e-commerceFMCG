@@ -51,7 +51,7 @@ userAddressEntity.setUserId(userId);
 	
 	@GetMapping("listuseraddress")
 	public String listUserAddress(Model model) {
-		List<UserAddressEntity> userAddressList = repoUserAddress.findAll();
+		List<Object[]> userAddressList = repoUserAddress.getAll();
 		model.addAttribute("userAddressList", userAddressList);
 		return "ListUserAddress";
 	}
