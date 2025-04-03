@@ -215,21 +215,110 @@
                             <div class="row g-4">
                                 <!-- Example Product Item -->
                                 <div class="col-md-6 col-lg-4 col-xl-3">
-                                    <div class="rounded position-relative fruite-item">
-                                        <div class="fruite-img">
-                                            <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                        </div>
-                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Beverages</div>
-                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                            <h4>Orange Juice</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                                <p class="text-dark fs-5 fw-bold mb-0">$2.99 / L</p>
-                                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="rounded position-relative fruite-item">
+        <div id="carouselPomo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/pomo1.png" class="img-fluid w-100 rounded-top" alt="pomo1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pomo2.png" class="img-fluid w-100 rounded-top" alt="pomo2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pomo3.png" class="img-fluid w-100 rounded-top" alt="pomo3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPomo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPomo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Beverages</div>
+        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+            <h4>Paper Boat</h4>
+            <p>Paper Boat Swing Zesty Pomegranate Juice (600 ml)</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+                <p class="text-dark fs-5 fw-bold mb-0">₹45</p>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative fruite-item">
+        <div id="carouselReal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/real1.png" class="img-fluid w-100 rounded-top" alt="real1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/real2.png" class="img-fluid w-100 rounded-top" alt="real2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/real3.png" class="img-fluid w-100 rounded-top" alt="real3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselReal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Beverages</div>
+        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+            <h4>Real Juice</h4>
+            <p>Real Fruit Power Mixed Fruit Juice 1 L</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+                <p class="text-dark fs-5 fw-bold mb-0">₹117</p>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative fruite-item">
+        <div id="carouselTropicana" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/tropicana1.png" class="img-fluid w-100 rounded-top" alt="tropicana1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tropicana2.png" class="img-fluid w-100 rounded-top" alt="tropicana2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tropicana3.png" class="img-fluid w-100 rounded-top" alt="tropicana3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTropicana" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTropicana" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Beverages</div>
+        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+            <h4>Tropicana</h4>
+            <p>Tropicana Mixed Fruit Delight Juice 1 L</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+                <p class="text-dark fs-5 fw-bold mb-0">₹105</p>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
                                 <!-- Add more product items for Beverages -->
                             </div>
                         </div>

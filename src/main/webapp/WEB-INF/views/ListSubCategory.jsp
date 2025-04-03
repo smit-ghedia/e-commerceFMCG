@@ -32,18 +32,20 @@
                 <table class="table table-bordered table-hover table-striped table-custom" id="subCategoryTable">
                   <thead class="table-dark">
                     <tr>
-                      <th>Category Id</th>
                       <th>SubCategory Id</th>
+                      <th>Category Id</th>
                       <th>SubCategory Name</th>
+                      <th>Category Name</th>
                       
                     </tr>
                   </thead>
                   <tbody>
                     <c:forEach items="${subCategoryList}" var="sc">
                       <tr>
-                        <td>${sc.categoryId}</td>
-                        <td>${sc.subCategoryId}</td>
-                        <td>${sc.subCategoryName}</td>
+                        <td>${sc[0]}</td>
+                        <td>${sc[1]}</td>
+                        <td>${sc[2]}</td>
+                        <td>${sc[3]}</td>
                         
                       </tr>
                     </c:forEach>

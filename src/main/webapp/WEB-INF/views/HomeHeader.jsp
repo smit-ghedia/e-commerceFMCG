@@ -44,9 +44,9 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
                         <div class="dropdown-menu m-0 bg-secondary rounded-0">
                             <a href="#" class="dropdown-item">Grocery & Staples</a>
-                            <a href="#" class="dropdown-item">Beverages</a>
-                            <a href="#" class="dropdown-item">Dairy & Bakery</a>
-                            <a href="#" class="dropdown-item">Snacks & Instant Food</a>
+                            <a href="homebeverages" class="dropdown-item">Beverages</a>
+                            <a href="homebakery" class="dropdown-item">Dairy & Bakery</a>
+                            <a href="homesnacks" class="dropdown-item">Snacks & Instant Food</a>
                             <a href="#" class="dropdown-item">Personal Care</a>
                             <a href="#" class="dropdown-item">Household Essentials</a>
                             <a href="#" class="dropdown-item">Baby & Kids Care</a>

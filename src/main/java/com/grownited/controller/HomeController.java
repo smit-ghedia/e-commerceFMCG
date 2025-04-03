@@ -39,4 +39,38 @@ public class HomeController {
 	public String homeCheckout() {
 		return"HomeCheckout";
 	}
+	
+	@GetMapping("homebeverages")
+	public String homeBeverages() {
+		return"HomeBeverages";
+	}
+	@GetMapping("beveragespremix")
+	public String beveragesPremix() {
+		return"BeveragesPremix";
+	}
+	
+	@GetMapping("beveragesfreshjuice")
+	public String beveragesFreshjuice() {
+		return"BeveragesFreshJuice";
+	}
+	@GetMapping("beveragesmilk")
+	public String beveragesMilk() {
+		return"BeveragesMilk";
+	}
+	@GetMapping("beverageswater")
+	public String beveragesWater() {
+		return "BeveragesWater";
+	}
+	@GetMapping("beveragessoda")
+	public String beveragesSoda() {
+		return"BeveragesSoda";
+	}
+	@GetMapping("homebakery")
+	public String homeBakery() {
+		return"HomeBakery";
+	}
+	@GetMapping("homesnacks")
+	public String homeSnacks() {
+		return"HomeSnacks";
+	}
 }
