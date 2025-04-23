@@ -83,17 +83,17 @@
 
     <div class="mb-3">
         <label for="image1" class="form-label">Product Image 1:</label>
-        <input type="text" id="image1" name="image1" class="form-control" required>
+        <input type="file" id="image1" name="image1" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label for="image2" class="form-label">Product Image 2:</label>
-        <input type="text" id="image2" name="image2" class="form-control" required>
+        <input type="file" id="image2" name="image2" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label for="image3" class="form-label">Product Image 3:</label>
-        <input type="text" id="image3" name="image3" class="form-control" required>
+        <input type="file" id="image3" name="image3" class="form-control" required>
     </div>
 
     <div class="text-center">

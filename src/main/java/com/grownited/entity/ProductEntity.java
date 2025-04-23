@@ -23,13 +23,11 @@ public class ProductEntity {
 	private String offerPrice;
 	private String offerPercentage;
 	private String productDetail;
-	private String image1;
-	private String image2;
-	private String image3;
 	private String quantity;
     private LocalDateTime createdAt;
-
-	
+    private String image1Path;
+    private String image2Path;
+    private String image3Path;	
 
     // Automatically set createdAt before persisting the entity
     @PrePersist
@@ -85,24 +83,7 @@ public class ProductEntity {
 	public void setProductDetail(String productDetail) {
 		this.productDetail = productDetail;
 	}
-	public String getImage1() {
-		return image1;
-	}
-	public void setImage1(String image1) {
-		this.image1 = image1;
-	}
-	public String getImage2() {
-		return image2;
-	}
-	public void setImage2(String image2) {
-		this.image2 = image2;
-	}
-	public String getImage3() {
-		return image3;
-	}
-	public void setImage3(String image3) {
-		this.image3 = image3;
-	}
+	
 	public String getQuantity() {
 		return quantity;
 	}
@@ -116,6 +97,30 @@ public class ProductEntity {
 
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	public String getImage1Path() {
+		return image1Path;
+	}
+
+	public void setImage1Path(String image1Path) {
+		this.image1Path = image1Path;
+	}
+
+	public String getImage2Path() {
+		return image2Path;
+	}
+
+	public void setImage2Path(String image2Path) {
+		this.image2Path = image2Path;
+	}
+
+	public String getImage3Path() {
+		return image3Path;
+	}
+
+	public void setImage3Path(String image3Path) {
+		this.image3Path = image3Path;
 	}
 	
 	

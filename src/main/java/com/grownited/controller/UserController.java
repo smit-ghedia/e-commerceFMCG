@@ -48,6 +48,18 @@ public class UserController {
 		}
 		return "ViewUser";
 	}
+	@GetMapping("edituser")
+	public String editUser(Integer userId, Model model) {
+		Optional<UserEntity> op = repoUser.findById(userId);
+		if (op.isEmpty()) {
+			return"redirect:/listuser";
+			
+		} else {
+			model.addAttribute("user",op.get());
+			return"EditUser";
+
+		}
+	}
 	
 	@GetMapping("deleteuser")
 	public String deleteUser(Integer userId) {

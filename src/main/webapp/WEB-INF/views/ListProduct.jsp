@@ -57,9 +57,9 @@
                         <td>${p.offerPrice}</td>
                         <td>${p.offerPercentage}</td>
                         <td>${p.quantity}</td>
-                        <td>${p.image1 }</td>
-                        <td>${p.image2 }</td>
-                        <td>${p.image3 }</td>
+                        <td>${p.Image1Path}</td>
+                        <td>${p.Image2Path}</td>
+                        <td>${p.Image3Path}</td>
                         <td>${p.createdAt}</td>
                       </tr>
                     </c:forEach>
